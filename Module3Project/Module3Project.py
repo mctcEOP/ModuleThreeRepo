@@ -120,7 +120,7 @@ def print_receipt(num_scoops, chosen_flavors, chosen_toppings, coneType):
         for topping in chosen_toppings:
             print(f"- {topping.title()}")
 
-    print(f"\nCone: {coneType}")
+    print(f"\nCone: {coneType.title()}")
 
     # prints the total
     total, discount = calculate_total(num_scoops, len(chosen_toppings), coneType)
